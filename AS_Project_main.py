@@ -60,7 +60,7 @@ class Main_screen:
             list_coin_buttom = DataBase().get_coin_in_botton(id_user)
             for i in range(5):
                 
-                sleep(1)
+                
                 print(list_coin_buttom, 'list_coin')
 
                 now = datetime.datetime.now()
@@ -165,6 +165,7 @@ class change_coin_window(Main_screen):
         
             oll_dict = json.load(w)
             oll_keys = [i for i in oll_dict.keys()]
+            #oll_keys.sort()
             print(oll_keys)
 
         for i in oll_keys:
@@ -181,6 +182,9 @@ class change_coin_window(Main_screen):
             canvas1.pack(side=LEFT, fill=BOTH, expand=1)
             frame1 = Frame(canvas1)
             canvas1.create_window((0, 0), window=frame1, anchor=CENTER)
+
+            #oll_name_coin_with_button.append(oll_dict[i])
+            oll_dict[i].sort()
 
             for r in oll_dict[i]:
                 if column > 6:

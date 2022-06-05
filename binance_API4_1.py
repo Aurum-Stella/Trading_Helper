@@ -307,11 +307,8 @@ class Сounting(Coins_data, Candlestick):
                 #print(Pivot_point(c, i).pricePP())
 
     def counting_coins_and_interval_desctop(self):
-        coin_price = 0
-        
         coin_price = float(super().get_average_price(self.coins_list))
         print(coin_price, 'тот самый')
-        #coins_list.append([super().get_average_price(i) for i in self.coins_list])
 
         
         return(coin_price)

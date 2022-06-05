@@ -18,8 +18,8 @@ def send_sequrity_code(num_message, email = None, secur_code = None, name = None
     
 
     # setup the parameters of the message
-    password = "mCm42xM3b8v8IWaS"
-    msg['From'] = "aurum_stella@ukr.net"
+    password = ""
+    msg['From'] = ""
     msg['To'] = email
     msg['Subject'] = "AS_Project"
     
